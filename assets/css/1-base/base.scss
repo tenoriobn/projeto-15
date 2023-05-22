@@ -1,0 +1,12 @@
+@import './reset';
+@import './variaveis';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+body {
+    background: $very-dark-blue;
+    box-sizing: border-box;
+    font-family: $rubik;
+    @include font-styling($pale-Blue, 1.125rem, 300);
+
+    padding: 0 1.5rem;
+}
