@@ -53,6 +53,56 @@ table {
   border-spacing: 0;
 }
 
+.content .content__dashboard {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1rem;
+  margin-top: 5rem;
+}
+.content .content__dashboard .dashboard__user {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.content .content__dashboard .dashboard__user .user__icon {
+  border: 3px solid hsl(300, 100%, 99%);
+  border-radius: 50%;
+  max-width: 4.375rem;
+  width: 100%;
+  overflow: hidden;
+}
+.content .content__dashboard .dashboard__user .user__info .user__report {
+  color: hsl(236, 100%, 87%);
+  font-size: 1rem;
+  font-weight: 300;
+}
+.content .content__dashboard .dashboard__user .user__info .user__name {
+  color: hsl(300, 100%, 99%);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+.content .content__dashboard .dashboard__period {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.75rem 0;
+}
+.content .content__dashboard .dashboard__period .period {
+  color: hsl(235, 45%, 61%);
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.content .content__dashboard .dashboard__period .active {
+  color: hsl(300, 100%, 99%);
+  font-size: "";
+  font-weight: "";
+}
+
 body {
   background: hsl(226, 43%, 10%);
   box-sizing: border-box;
@@ -60,5 +110,11 @@ body {
   color: hsl(236, 100%, 87%);
   font-size: 1.125rem;
   font-weight: 300;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    padding: 0 1.5rem;
+  }
 }/*# sourceMappingURL=base.css.map */

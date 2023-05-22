@@ -1,6 +1,7 @@
 @import './reset';
 @import './variaveis';
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+@import '../2-componentes/1-dashboard.scss';
 
 body {
     background: $very-dark-blue;
@@ -8,5 +9,11 @@ body {
     font-family: $rubik;
     @include font-styling($pale-Blue, 1.125rem, 300);
 
-    padding: 0 1.5rem;
+    padding: 0 1rem;
+}
+
+@media screen and (min-width: 375px) {
+    body {
+        padding: 0 1.5rem;
+    }
 }

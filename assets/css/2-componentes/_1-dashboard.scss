@@ -1,0 +1,58 @@
+@import '../1-base/variaveis';
+
+.content {
+    .content__dashboard {
+        background-color: $dark-blue;
+        border-radius: 1rem;
+        margin-top: 5rem;
+
+        .dashboard__user {
+            background-color: $blue;
+            border-radius: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 2rem 0;
+
+            .user__icon {
+                border: 3px solid $white;
+                border-radius: 50%;
+                max-width: 4.375rem;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .user__info {
+                .user__report {
+                    @include font-styling($pale-Blue, 1rem, 300);
+                }
+
+                .user__name {
+                    @include font-styling($white, 1.5rem, 400);
+                    margin-top: .5rem;
+                }
+            }
+        }
+
+        .dashboard__period {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 1.75rem 0;
+
+            .period {
+                @include font-styling($desaturated-blue, 1.125rem, 400);
+                text-decoration: none;
+
+                // &:focus {
+                //     @include font-styling($white, '', '');
+                // }
+            }
+
+            .active {
+                @include font-styling($white, '', '');
+            }
+        }
+    }
+}
