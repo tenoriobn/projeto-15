@@ -1,0 +1,94 @@
+@import '../1-base/variaveis';
+
+.content__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+
+    .card {
+        background-repeat: no-repeat;
+        border-radius: 1rem;
+        padding-top: 2.5rem;
+
+        .card__container {
+            box-sizing: border-box;
+            background-color: $dark-blue;
+            border-radius: 1rem;
+            padding: 1.75rem 1.5rem;
+
+            .card__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .card__activity {
+                    @include font-styling($white, 1.125rem, 500);
+                }
+
+                .card__btn {
+                    border: none;
+                    background: none;
+                    background-image: url(../../img/icon-ellipsis.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 1.3125rem;
+                    height: .3125rem;
+                    cursor: pointer;
+                }
+            }
+
+            .card__body {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 1.125rem;
+
+                .card__hours {
+                    @include font-styling($white, 2rem, 300);
+                }
+
+                .card__active-period {
+                    @include font-styling($pale-Blue, .9375rem, 400);
+                }
+            }
+        }
+    }
+
+    .work {
+        background-color: $light-orange;
+        background-image: url(../../img/icon-work.svg);
+        background-position: 93% -13%;
+    }
+
+    .play {
+        background-color: $soft-blue;
+        background-image: url(../../img/icon-play.svg);
+        background-position: 93% -5%;
+    }
+
+    .study {
+        background-color: $light-red;
+        background-image: url(../../img/icon-study.svg);
+        background-position: 93% -13%;
+    }
+
+    .exercise {
+        background-color: $lime-green;
+        background-image: url(../../img/icon-exercise.svg);
+        background-position: 93% -1%;
+    }
+
+    .social {
+        background-color: $violet;
+        background-image: url(../../img/icon-social.svg);
+        background-position: 93% -25%;
+    }
+
+    .self-care {
+        background-color: $soft-orange;
+        background-image: url(../../img/icon-self-care.svg);
+        background-position: 93% -11%;
+    }
+}

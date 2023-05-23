@@ -62,10 +62,10 @@ table {
   background-color: hsl(246, 80%, 60%);
   border-radius: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  padding: 2rem 0;
+  padding: 2rem 1.5rem;
 }
 .content .content__dashboard .dashboard__user .user__icon {
   border: 3px solid hsl(300, 100%, 99%);
@@ -88,8 +88,8 @@ table {
 .content .content__dashboard .dashboard__period {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 1.75rem 0;
+  justify-content: space-between;
+  padding: 1.75rem 1.5rem;
 }
 .content .content__dashboard .dashboard__period .period {
   color: hsl(235, 45%, 61%);
@@ -101,6 +101,91 @@ table {
   color: hsl(300, 100%, 99%);
   font-size: "";
   font-weight: "";
+}
+
+.content__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+}
+.content__cards .card {
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  padding-top: 2.5rem;
+}
+.content__cards .card .card__container {
+  box-sizing: border-box;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1rem;
+  padding: 1.75rem 1.5rem;
+}
+.content__cards .card .card__container .card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content__cards .card .card__container .card__header .card__activity {
+  color: hsl(300, 100%, 99%);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.content__cards .card .card__container .card__header .card__btn {
+  border: none;
+  background: none;
+  background-image: url(../../img/icon-ellipsis.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.3125rem;
+  height: 0.3125rem;
+  cursor: pointer;
+}
+.content__cards .card .card__container .card__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.125rem;
+}
+.content__cards .card .card__container .card__body .card__hours {
+  color: hsl(300, 100%, 99%);
+  font-size: 2rem;
+  font-weight: 300;
+}
+.content__cards .card .card__container .card__body .card__active-period {
+  color: hsl(236, 100%, 87%);
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+.content__cards .work {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url(../../img/icon-work.svg);
+  background-position: 93% -13%;
+}
+.content__cards .play {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url(../../img/icon-play.svg);
+  background-position: 93% -5%;
+}
+.content__cards .study {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url(../../img/icon-study.svg);
+  background-position: 93% -13%;
+}
+.content__cards .exercise {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url(../../img/icon-exercise.svg);
+  background-position: 93% -1%;
+}
+.content__cards .social {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url(../../img/icon-social.svg);
+  background-position: 93% -25%;
+}
+.content__cards .self-care {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url(../../img/icon-self-care.svg);
+  background-position: 93% -11%;
 }
 
 body {

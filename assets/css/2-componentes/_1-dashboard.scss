@@ -10,10 +10,10 @@
             background-color: $blue;
             border-radius: 1rem;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             gap: 1rem;
-            padding: 2rem 0;
+            padding: 2rem 1.5rem;
 
             .user__icon {
                 border: 3px solid $white;
@@ -38,8 +38,8 @@
         .dashboard__period {
             display: flex;
             align-items: center;
-            justify-content: space-around;
-            padding: 1.75rem 0;
+            justify-content: space-between;
+            padding: 1.75rem 1.5rem;
 
             .period {
                 @include font-styling($desaturated-blue, 1.125rem, 400);
