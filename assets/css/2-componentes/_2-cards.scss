@@ -11,6 +11,7 @@
         background-repeat: no-repeat;
         border-radius: 1rem;
         padding-top: 2.5rem;
+        grid-area: cards;
 
         .card__container {
             box-sizing: border-box;
@@ -60,35 +61,105 @@
         background-color: $light-orange;
         background-image: url(../../img/icon-work.svg);
         background-position: 93% -13%;
+        grid-area: work;
     }
 
     .play {
         background-color: $soft-blue;
         background-image: url(../../img/icon-play.svg);
         background-position: 93% -5%;
+        grid-area: play;
     }
 
     .study {
         background-color: $light-red;
         background-image: url(../../img/icon-study.svg);
         background-position: 93% -13%;
+        grid-area: study;
     }
 
     .exercise {
         background-color: $lime-green;
         background-image: url(../../img/icon-exercise.svg);
         background-position: 93% -1%;
+        grid-area: exercise;
     }
 
     .social {
         background-color: $violet;
         background-image: url(../../img/icon-social.svg);
         background-position: 93% -25%;
+        grid-area: social;
     }
 
     .self-care {
         background-color: $soft-orange;
         background-image: url(../../img/icon-self-care.svg);
         background-position: 93% -11%;
+        grid-area: self-care;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .content__cards {
+        margin-bottom: 5rem;
+        grid-area: cards;
+
+        display: grid;
+        grid-template-areas: 
+        'work play study'
+        'exercise social self-care';
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            .card__container {
+                padding: 2rem;
+
+                .card__body {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 1.5rem;
+                    margin-top: 2.5rem;
+    
+                    .card__hours {
+                        @include font-styling($white, 3.5rem, 400);
+                    }
+                }
+            }
+        }
+
+        .work {
+            background-position: 93% -6%;
+        }
+    
+        .play {
+            background-position: 93% -2%;
+        }
+    
+        .study {
+            background-position: 93% -4%;
+        }
+    
+        .exercise {
+            background-position: 93% -1%;
+        }
+    
+        .social {
+            background-position: 93% -8%;
+        }
+    
+        .self-care {
+            background-position: 93% -5%;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content__cards {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
     }
 }

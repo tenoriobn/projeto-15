@@ -103,6 +103,35 @@ table {
   font-weight: "";
 }
 
+@media screen and (min-width: 1200px) {
+  .content .content__dashboard {
+    display: grid;
+    grid-area: dashboard;
+    margin-top: 0rem;
+    grid-template-rows: 5fr 2fr;
+  }
+  .content .content__dashboard .dashboard__user {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+  .content .content__dashboard .dashboard__user .user__icon {
+    max-width: 5.25rem;
+  }
+  .content .content__dashboard .dashboard__user .user__info .user__name {
+    color: hsl(300, 100%, 99%);
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-top: 0.75rem;
+  }
+  .content .content__dashboard .dashboard__period {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+}
 .content__cards {
   display: flex;
   flex-direction: column;
@@ -114,6 +143,7 @@ table {
   background-repeat: no-repeat;
   border-radius: 1rem;
   padding-top: 2.5rem;
+  grid-area: cards;
 }
 .content__cards .card .card__container {
   box-sizing: border-box;
@@ -161,33 +191,90 @@ table {
   background-color: hsl(15, 100%, 70%);
   background-image: url(../../img/icon-work.svg);
   background-position: 93% -13%;
+  grid-area: work;
 }
 .content__cards .play {
   background-color: hsl(195, 74%, 62%);
   background-image: url(../../img/icon-play.svg);
   background-position: 93% -5%;
+  grid-area: play;
 }
 .content__cards .study {
   background-color: hsl(348, 100%, 68%);
   background-image: url(../../img/icon-study.svg);
   background-position: 93% -13%;
+  grid-area: study;
 }
 .content__cards .exercise {
   background-color: hsl(145, 58%, 55%);
   background-image: url(../../img/icon-exercise.svg);
   background-position: 93% -1%;
+  grid-area: exercise;
 }
 .content__cards .social {
   background-color: hsl(264, 64%, 52%);
   background-image: url(../../img/icon-social.svg);
   background-position: 93% -25%;
+  grid-area: social;
 }
 .content__cards .self-care {
   background-color: hsl(43, 84%, 65%);
   background-image: url(../../img/icon-self-care.svg);
   background-position: 93% -11%;
+  grid-area: self-care;
 }
 
+@media screen and (min-width: 992px) {
+  .content__cards {
+    margin-bottom: 5rem;
+    grid-area: cards;
+    display: grid;
+    grid-template-areas: "work play study" "exercise social self-care";
+  }
+  .content__cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .content__cards .card .card__container {
+    padding: 2rem;
+  }
+  .content__cards .card .card__container .card__body {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  .content__cards .card .card__container .card__body .card__hours {
+    color: hsl(300, 100%, 99%);
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+  .content__cards .work {
+    background-position: 93% -6%;
+  }
+  .content__cards .play {
+    background-position: 93% -2%;
+  }
+  .content__cards .study {
+    background-position: 93% -4%;
+  }
+  .content__cards .exercise {
+    background-position: 93% -1%;
+  }
+  .content__cards .social {
+    background-position: 93% -8%;
+  }
+  .content__cards .self-care {
+    background-position: 93% -5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content__cards {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+}
 body {
   background: hsl(226, 43%, 10%);
   box-sizing: border-box;
@@ -201,5 +288,40 @@ body {
 @media screen and (min-width: 375px) {
   body {
     padding: 0 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0;
+  }
+  body .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  body .content {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    grid-template-areas: "dashboard cards cards cards" "dashboard cards cards cards";
+  }
+}
+@media screen and (min-width: 1400px) {
+  body .content {
+    grid-template-columns: 3fr 9fr;
   }
 }/*# sourceMappingURL=base.css.map */

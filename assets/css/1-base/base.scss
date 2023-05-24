@@ -18,3 +18,51 @@ body {
         padding: 0 1.5rem;
     }
 }
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 0 2.25rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        width: 80%;
+        height: 100vh;
+        margin: 0 auto;
+        
+        .content {
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+            grid-template-areas: 
+            'dashboard cards cards cards'
+            'dashboard cards cards cards';
+        }
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+        .content {
+            grid-template-columns: 3fr 9fr;
+        }
+    }
+
+}
