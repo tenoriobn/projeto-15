@@ -150,6 +150,13 @@ table {
   background-color: hsl(235, 46%, 20%);
   border-radius: 1rem;
   padding: 1.75rem 1.5rem;
+  cursor: pointer;
+}
+.content__cards .card .card__container:hover {
+  background-color: hsl(236, 41%, 34%);
+}
+.content__cards .card .card__container.hovered {
+  background-color: hsl(235, 46%, 20%);
 }
 .content__cards .card .card__container .card__header {
   display: flex;
