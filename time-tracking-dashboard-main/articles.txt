@@ -1,0 +1,69 @@
+            <article class="card play">
+                <div class="card__container">
+                    <div class="card__header">
+                        <h2 class="card__activity">Work</h2>
+                        <button class="card__btn"></button>
+                    </div>
+
+                    <div class="card__body">
+                        <h3 class="card__hours">32hrs</h3>
+                        <p class="card__active-period">Last Week - 36 hrs</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card study">
+                <div class="card__container">
+                    <div class="card__header">
+                        <h2 class="card__activity">Work</h2>
+                        <button class="card__btn"></button>
+                    </div>
+
+                    <div class="card__body">
+                        <h3 class="card__hours">32hrs</h3>
+                        <p class="card__active-period">Last Week - 36 hrs</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card exercise">
+                <div class="card__container">
+                    <div class="card__header">
+                        <h2 class="card__activity">Work</h2>
+                        <button class="card__btn"></button>
+                    </div>
+
+                    <div class="card__body">
+                        <h3 class="card__hours">32hrs</h3>
+                        <p class="card__active-period">Last Week - 36 hrs</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card social">
+                <div class="card__container">
+                    <div class="card__header">
+                        <h2 class="card__activity">Work</h2>
+                        <button class="card__btn"></button>
+                    </div>
+
+                    <div class="card__body">
+                        <h3 class="card__hours">32hrs</h3>
+                        <p class="card__active-period">Last Week - 36 hrs</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card self-care">
+                <div class="card__container">
+                    <div class="card__header">
+                        <h2 class="card__activity">Work</h2>
+                        <button class="card__btn"></button>
+                    </div>
+
+                    <div class="card__body">
+                        <h3 class="card__hours">32hrs</h3>
+                        <p class="card__active-period">Last Week - 36 hrs</p>
+                    </div>
+                </div>
+            </article>
