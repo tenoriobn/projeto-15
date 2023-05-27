@@ -102,9 +102,24 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .content__cards {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.875rem;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .content__cards {
-        margin-bottom: 5rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
 
         .card {
             display: flex;
@@ -150,25 +165,5 @@
         .self-care {
             background-position: 93% -5%;
         }
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .content__cards {
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media screen and (min-width: 990px) {
-    .content__cards {
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
     }
 }

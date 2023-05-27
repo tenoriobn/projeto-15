@@ -99,22 +99,35 @@ table {
   font-weight: 400;
   text-decoration: none;
 }
+.content .content__dashboard .dashboard__period .period:hover {
+  color: hsl(300, 100%, 99%);
+  font-size: "";
+  font-weight: "";
+}
 .content .content__dashboard .dashboard__period .active {
   color: hsl(300, 100%, 99%);
   font-size: "";
   font-weight: "";
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 992px) {
   .content {
-    margin: 0rem;
+    margin: 5rem 0;
   }
 }
 @media screen and (min-width: 1200px) {
+  .content {
+    margin: 0rem;
+  }
+  .content .content__dashboard {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
   .content .content__dashboard .dashboard__user {
     flex-direction: column;
     align-items: flex-start;
     gap: 2.5rem;
+    padding: 2rem;
   }
   .content .content__dashboard .dashboard__user .user__icon {
     max-width: 5.25rem;
@@ -131,6 +144,7 @@ table {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 1.5rem;
+    padding: 2rem;
   }
 }
 .content__cards {
@@ -225,9 +239,21 @@ table {
   background-position: 93% -11%;
 }
 
+@media screen and (min-width: 768px) {
+  .content__cards {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.875rem;
+  }
+}
 @media screen and (min-width: 992px) {
   .content__cards {
-    margin-bottom: 5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .content__cards .card {
     display: flex;
@@ -267,22 +293,6 @@ table {
     background-position: 93% -5%;
   }
 }
-@media screen and (min-width: 768px) {
-  .content__cards {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (min-width: 990px) {
-  .content__cards {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 body {
   background: hsl(226, 43%, 10%);
   box-sizing: border-box;
@@ -305,11 +315,11 @@ body {
   body .content {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.875rem;
     width: 100%;
   }
 }
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 992px) {
   body {
     display: flex;
     flex-direction: column;
