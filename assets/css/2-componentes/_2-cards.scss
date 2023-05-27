@@ -11,7 +11,6 @@
         background-repeat: no-repeat;
         border-radius: 1rem;
         padding-top: 2.5rem;
-        grid-area: cards;
 
         .card__container {
             box-sizing: border-box;
@@ -70,54 +69,42 @@
         background-color: $light-orange;
         background-image: url(../../img/icon-work.svg);
         background-position: 93% -13%;
-        grid-area: work;
     }
 
     .play {
         background-color: $soft-blue;
         background-image: url(../../img/icon-play.svg);
         background-position: 93% -5%;
-        grid-area: play;
     }
 
     .study {
         background-color: $light-red;
         background-image: url(../../img/icon-study.svg);
         background-position: 93% -13%;
-        grid-area: study;
     }
 
     .exercise {
         background-color: $lime-green;
         background-image: url(../../img/icon-exercise.svg);
         background-position: 93% -1%;
-        grid-area: exercise;
     }
 
     .social {
         background-color: $violet;
         background-image: url(../../img/icon-social.svg);
         background-position: 93% -25%;
-        grid-area: social;
     }
 
     .self-care {
         background-color: $soft-orange;
         background-image: url(../../img/icon-self-care.svg);
         background-position: 93% -11%;
-        grid-area: self-care;
     }
 }
 
 @media screen and (min-width: 992px) {
     .content__cards {
         margin-bottom: 5rem;
-        grid-area: cards;
-
-        display: grid;
-        grid-template-areas: 
-        'work play study'
-        'exercise social self-care';
 
         .card {
             display: flex;
@@ -166,9 +153,22 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
     .content__cards {
         margin-top: 0rem;
         margin-bottom: 0rem;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .content__cards {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
