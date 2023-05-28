@@ -44,7 +44,7 @@ function createCard() {
                         cardActivity.textContent = `${title}`;
             
                         // Criar o elemento <button> com a classe "card__btn"
-                        const cardBtn = document.createElement('button');
+                        const cardBtn = document.createElement('span');
                         cardBtn.classList.add('card__btn');
                         cardBtn.setAttribute('arial-label', 'options');
             
